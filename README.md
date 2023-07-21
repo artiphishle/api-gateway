@@ -1,28 +1,37 @@
 # API Gateway (NginX & Docker)
 
-NginX API Gateway built by Docker, specifically `docker-compose`.
+Welcome! I'm a API-Gateway built using NginX. Well almost ;) I'm a P.O.C. and my creator works on: integrations, automations & testing now...
 
 ## Quickstart
 
-**Don't.** Work in progress.
+Make sure you have a local installation of `docker` and `docker-compose`.
+Ready? Great, then one, two & three:
 
-## P.O.C.
+1. Download repository:
 
-For now the goal is to start one API (chess-api) using this API gateway. No automations, just prove that it works.
+   ```bash
+    git clone https://github.com/scha-ch/api-gateway
+   ```
 
-I'm going to keep you posted...
+2. Move into directory and install packages via npm:
 
-## Workflow
+   ```bash
+    cd api-gateway && npm i
+   ```
 
-TODO:
+3. Build & Run the gateway:
+   ```bash
+    npm run build
+   ```
 
-1. Read a `.yml` config to specify API's (dockerized github repos) which should be `.gitignore`'d (provide a sample instead).
-2. Config API Gateway depending on API config.
-3. Run `docker-compose` to start the API gateway and its API's.
+<span style='padding:5px 8px;background:#1b2;color:#ffffff'>DONE</span>&nbsp;API-Gateway runs at: http://localhost
 
 ## Authentication
 
-Work in progress.
+| Authentication | Status  |
+| -------------- | ------- |
+| ApiKey         | pending |
+| IAM            | todo    |
 
 ## Analytics
 
