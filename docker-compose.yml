@@ -1,13 +1,22 @@
 version: "3.8"
 services:
-  chess:
+  api_chess:
     build:
       context: ./api/chess
-    ports:
-      - "3001:3001"
+    networks:
+      netopia:
+        aliases:
+          - api_chess
   nginx:
     restart: always
     build:
       context: ./nginx
     ports:
       - "80:80"
+    networks:
+      netopia:
+        aliases:
+          - nginx
+networks:
+  netopia:
+    driver: bridge

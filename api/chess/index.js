@@ -8,7 +8,7 @@ app.get("/", (_req, res) => {
   res.send("Welcome to the Chess-API!");
 });
 
-app.get("/game", (req, res) => {
+app.get("/game", (_req, res) => {
   res.json({
     fen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w kqKQ - 0 0",
     white: "player 1",
