@@ -1,5 +1,5 @@
 {
-  "name": "poc-api",
+  "name": "api_chess",
   "version": "0.1.0",
   "scripts": {
     "start": "node index.js"

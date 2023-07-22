@@ -4,8 +4,8 @@
   "description": "NginX API Gateway (Docker)",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && docker-compose up --build",
-    "clean": "docker rm api-gateway-nginx-1 && docker rm api-gateway-chess-1 && docker rmi api-gateway-nginx --force && docker rmi api-gateway-chess --force",
+    "build": "docker-compose up --build",
+    "clean": "docker rm api-gateway-nginx-1 && docker rm api-gateway-api_chess-1 && docker rmi api-gateway-nginx --force && docker rmi api-gateway-api_chess --force",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

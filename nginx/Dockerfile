@@ -1,5 +1,10 @@
+#
+# NginX
+# API Gateway
+#
 FROM nginx
+WORKDIR /etc/nginx
 
-RUN rm -rf conf.d/*
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY index.html /etc/nginx/html/index.html
+COPY mime.types mime.types
+COPY nginx.conf nginx.conf
+COPY html html
